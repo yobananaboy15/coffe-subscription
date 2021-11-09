@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import Home from './pages/Home';
 import Subscribe from './pages/Subscribe';
 import Header from './components/Header/Header';
+import './styles/index.scss';
 
 function App() {
   return (

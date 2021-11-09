@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './HeaderItem.module.scss';
 
 export const items = [
   { text: 'Home', link: '/' },
   { text: 'About us', link: '/about' },
-  { text: 'Create your plan', link: '/subscription' },
+  { text: 'Create your plan', link: '/subscribe' },
 ] as const;
 
 type HeaderItemProps = {
@@ -12,7 +13,7 @@ type HeaderItemProps = {
 };
 
 const HeaderItem = ({ itemDetails } : HeaderItemProps) => (
-  <div>
+  <div className={styles.item}>
     <Link to={itemDetails.link}>{itemDetails.text}</Link>
   </div>
 );
