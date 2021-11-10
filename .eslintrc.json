@@ -20,5 +20,10 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {}
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ]
+    }
 }
