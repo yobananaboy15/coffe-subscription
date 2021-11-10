@@ -5,8 +5,9 @@ $item-bold-weight: 700;
   a {
     font-size: 1.2rem;
     font-weight: $item-bold-weight;
-    color: colors.$grey;
+    line-height: 1.5rem;
     letter-spacing: 0.1rem;
+    color: colors.$grey;
   }
 }
 
