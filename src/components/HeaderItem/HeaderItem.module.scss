@@ -1,3 +1,16 @@
+@use "../../styles/abstracts/colors";
+$item-bold-weight: 700;
+
+.item {
+  a {
+    font-size: 1.2rem;
+    font-weight: $item-bold-weight;
+    color: colors.$grey;
+    letter-spacing: 0.1rem;
+  }
+}
+
 .item + .item{
   margin-left: 10px;
 }
+

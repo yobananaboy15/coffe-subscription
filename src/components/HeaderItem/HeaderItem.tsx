@@ -12,9 +12,9 @@ type HeaderItemProps = {
   itemDetails: typeof items[number]
 };
 
-const HeaderItem = ({ itemDetails } : HeaderItemProps) => (
+const HeaderItem = ({ itemDetails }: HeaderItemProps) => (
   <div className={styles.item}>
-    <Link to={itemDetails.link}>{itemDetails.text}</Link>
+    <Link to={itemDetails.link}>{itemDetails.text.toUpperCase()}</Link>
   </div>
 );
 
