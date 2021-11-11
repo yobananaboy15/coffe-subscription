@@ -1,8 +1,13 @@
+@use "../../styles/abstracts/mixins";
+
 .header{
   display: flex;
 }
 
 .headerItemsContainer {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @include mixins.mq(md){
+    display: flex;
+    margin-left: auto;
+  }
 }

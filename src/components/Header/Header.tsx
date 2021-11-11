@@ -1,21 +1,17 @@
 import React from 'react';
 import HeaderLogo from '../HeaderLogo/HeaderLogo';
 import HeaderItem, { items } from '../HeaderItem/HeaderItem';
-import useViewport from '../../hooks/useViewport';
-import { breakpoints } from '../../constants';
 import styles from './Header.module.scss';
+import HamburgerMenuIcon from '../HamburgerMenuIcon/HamburgerMenuIcon';
 
-const Header = () => {
-  const { width } = useViewport();
-
-  return (
-    <header className={styles.header}>
-      <HeaderLogo />
-      <div className={styles.headerItemsContainer}>
-        {items.map((item) => <HeaderItem itemDetails={item} />)}
-      </div>
-    </header>
-  );
-};
+const Header = () => (
+  <header className={styles.header}>
+    <HeaderLogo />
+    <HamburgerMenuIcon />
+    <div className={styles.headerItemsContainer}>
+      {items.map((item) => <HeaderItem itemDetails={item} />)}
+    </div>
+  </header>
+);
 
 export default Header;

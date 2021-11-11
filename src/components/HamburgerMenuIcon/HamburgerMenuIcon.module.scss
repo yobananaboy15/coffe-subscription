@@ -1,0 +1,8 @@
+@use "../../styles/abstracts/mixins";
+
+.menuIcon {
+  margin-left: auto;
+  @include mixins.mq(md){
+    display: none;
+  }
+}

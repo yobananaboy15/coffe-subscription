@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import styles from './HamburgerMenuIcon.module.scss';
 
 const HamburgerMenuIcon = () => (
-  <div>
+  <div className={styles.menuIcon}>
     MENU
   </div>
 );
