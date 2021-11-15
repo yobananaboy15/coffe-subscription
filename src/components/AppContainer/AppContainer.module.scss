@@ -1,0 +1,12 @@
+@use "../../styles/abstracts/mixins";
+$max-width: 128rem;
+
+.container {
+  margin: 3.2rem auto;
+  width: 90%;
+  max-width: $max-width;
+
+  @include mixins.mq(sm){
+    margin: 4rem auto;
+  }
+}
