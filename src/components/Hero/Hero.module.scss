@@ -1,8 +1,24 @@
+@use "../../styles/abstracts/mixins";
+
 .container {
   position: relative;
 }
 
 .heroImage {
   width: 100%;
+}
+
+.innerContent {
+  position: absolute;
+  top: 50%;
+  left: 2.4rem;
+  transform: translate(0, -50%);
+  @include mixins.mq(sm){
+    left: 5.8rem
+  }
+  @include mixins.mq(md){
+    left: 8.5rem;
+  }
+
 }
 

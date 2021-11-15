@@ -6,8 +6,13 @@ type HeroProps = {
 };
 
 const Hero = ({ heroImage }: HeroProps) => (
-  <div>
+  <div className={styles.container}>
     <img className={styles.heroImage} src={heroImage} alt="" />
+    <section className={styles.innerContent}>
+      <p>Title</p>
+      <p>some info</p>
+      <button type="button">Test</button>
+    </section>
   </div>
 );
 
