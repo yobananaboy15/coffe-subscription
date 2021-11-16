@@ -9,7 +9,7 @@ const Header = () => (
     <HeaderLogo />
     <HamburgerMenuIcon />
     <div className={styles.headerItemsContainer}>
-      {items.map((item) => <HeaderItem itemDetails={item} />)}
+      {items.map((item) => <HeaderItem key={item.text} itemDetails={item} />)}
     </div>
   </header>
 );
