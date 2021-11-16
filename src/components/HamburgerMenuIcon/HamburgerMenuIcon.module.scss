@@ -2,7 +2,7 @@
 
 .menuIcon {
   margin-left: auto;
-  @include mixins.mq(md){
+  @include mixins.mq(sm){
     display: none;
   }
 }
