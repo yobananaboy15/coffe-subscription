@@ -11,14 +11,16 @@
 .innerContent {
   position: absolute;
   top: 50%;
+  max-width: 27.9rem;
   left: 2.4rem;
   transform: translate(0, -50%);
   @include mixins.mq(sm){
-    left: 5.8rem
+    left: 5.8rem;
+    max-width: 39.8rem;
   }
   @include mixins.mq(md){
     left: 8.5rem;
+    max-width: 49.3rem;
   }
 
 }
-
