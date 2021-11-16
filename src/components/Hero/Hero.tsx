@@ -2,17 +2,16 @@ import React from 'react';
 import styles from './Hero.module.scss';
 
 type HeroProps = {
-  heroImage: string
+  heroImage: string,
+  children: any
 };
 
-const Hero = ({ heroImage }: HeroProps) => (
+const Hero = ({ heroImage, children }: HeroProps) => (
   <div className={styles.container}>
     <img className={styles.heroImage} src={heroImage} alt="" />
-    <section className={styles.innerContent}>
-      <p>Title</p>
-      <p>some info</p>
-      <button type="button">Test</button>
-    </section>
+    <div className={styles.innerContent}>
+      {children}
+    </div>
   </div>
 );
 
