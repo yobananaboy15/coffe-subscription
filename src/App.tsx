@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import AboutUs from './pages/AboutUs';
-import Home from './pages/Home';
-import Subscribe from './pages/Subscribe';
+import AboutUs from './pages/AboutUs/AboutUs';
+import Home from './pages/Home/Home';
+import Subscribe from './pages/Subscribe/Subscribe';
 import Header from './components/Header/Header';
 import AppContainer from './components/AppContainer/AppContainer';
 import { WindowResizeProvider } from './context/WindowResizeContext';
