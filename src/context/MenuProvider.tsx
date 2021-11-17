@@ -4,7 +4,12 @@ type MenuProviderProps = {
   children: any
 };
 
-const MenuContext = createContext({});
+type Context = {
+  isOpen: boolean,
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+};
+
+const MenuContext = createContext<Context | undefined>(undefined);
 
 export const MenuProvider = ({ children }: MenuProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);
