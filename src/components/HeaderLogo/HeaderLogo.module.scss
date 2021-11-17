@@ -1,0 +1,10 @@
+@use "../../styles/abstracts/mixins";
+
+.logo {
+  width: 16.3rem;
+  height: 1.8rem;
+  @include mixins.mq(sm){
+    width: 23.6rem;
+    height: 2.6rem;
+  }
+}
