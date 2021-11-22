@@ -5,10 +5,14 @@ import closeIcon from '../../assets/shared/mobile/icon-close.svg';
 import { useMenuProvider } from '../../context/MenuProvider';
 
 const HamburgerMenuIcon = () => {
-  const { isOpen } = useMenuProvider();
+  const { isOpen, setIsOpen } = useMenuProvider();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className={styles.menuIcon}>
-      {isOpen ? <img src={closeIcon} alt="Close icon" /> : <img src={hamburgerIcon} alt="Hamburger icon" />}
+      {isOpen ? <img src={closeIcon} role="button" alt="Close icon" onClick={toggleMenu} /> : <img role="button" src={hamburgerIcon} alt="Hamburger icon" onClick={toggleMenu} />}
     </div>
   );
 };
