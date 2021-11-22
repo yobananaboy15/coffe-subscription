@@ -1,0 +1,10 @@
+@use "../../styles/abstracts/colors";
+
+.button{
+  background-color: colors.$dark-cyan;
+  color: colors.$light-cream;
+  height: 5.6rem;
+  width: 21.7rem;
+  border-radius: 0.5rem;
+  border: none;
+}
