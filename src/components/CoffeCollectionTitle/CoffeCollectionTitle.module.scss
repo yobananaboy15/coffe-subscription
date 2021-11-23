@@ -1,0 +1,15 @@
+@use "../../styles/abstracts/colors";
+@use "sass:color";
+
+.title {
+  margin-bottom: 1.3rem;
+  font-family: 'Fraunces';
+  font-size: 4rem;
+  line-height: 7.2rem;
+  background-image: linear-gradient(rgba(colors.$grey, 1), rgba(colors.$grey, 0.1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
