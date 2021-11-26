@@ -8,6 +8,7 @@ import useViewport from '../../hooks/useViewport';
 import selectImage from '../../utils/selectImage';
 import styles from './Home.module.scss';
 import CoffeCollection from '../../components/CoffeCollection/CoffeCollection';
+import BlackContainer from '../../components/BlackContainer/BlackContainer';
 
 const Home = () => {
   const { width } = useViewport();
@@ -25,6 +26,7 @@ const Home = () => {
         </div>
       </Hero>
       <CoffeCollection />
+      <BlackContainer />
     </>
   );
 };
