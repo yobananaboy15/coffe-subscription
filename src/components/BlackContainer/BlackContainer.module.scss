@@ -1,20 +1,52 @@
+@use "../../styles/abstracts/colors";
+
 .container {
   display: grid;
-  grid-template-rows: 1fr repeat(12, 140px);
-  grid-template-columns: 1;
-  gap: 2.4rem;
+
+  .card {
+    border-radius: 1rem;
+    padding: 7.2rem 1.2rem 5.1rem 1.2rem;
+    margin-top: 2.4rem;
+    justify-self: center;
+    text-align: center;
+    z-index: 1;
+    background-color: colors.$dark-cyan;
+    max-width: 85%;
+  }
+
+  .card1{
+    grid-row: 2 / 4;
+    grid-column: 1;
+  }
+
+  .card2{
+    grid-row: 4 / 6;
+    grid-column: 1;
+  }
+  
+  .card3{
+    grid-row: 6 / 8;
+    grid-column: 1;
+  }
+
+  p {
+    color: colors.$light-cream;
+  }
 }
 
-.topText {
-  grid-column: 1;
-  grid-row: 1 / 6;
-  background-color: blue;
+
+.title {
+  color: colors.$light-cream;
+  margin-bottom: 2.4rem;
 }
 
-.card {
+.background1 {
+  border-radius: 1rem;
+  background-color: colors.$dark-grey-blue;
   grid-column: 1;
-  grid-row: 5 / 8;
-  background-color: red;
-  opacity: 0.5;
-  z-index: 1;
+  grid-row: 2 / 5;
+}
+
+.icon {
+  margin-bottom: 5.6rem;
 }
